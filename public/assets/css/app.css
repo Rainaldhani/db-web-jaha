@@ -1,0 +1,229 @@
+:root {
+    --font-title: 'Gabarito', sans-serif;
+    --font-body:'Rubik', sans-serif;
+
+    --color-hero: rgba(0, 0, 0, 0);
+    --color-body: #FFF8E8;
+    --color-body-2: #F7EED3;
+    --color-aside: #5C469C;
+    --color-footer: #0C134F;
+    --color-accent: #1D267D;
+
+
+    --color-font-light: #EAEAEA;
+    --color-font-dark: #251D3A;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+#nav-container {
+    background-color: beige;
+    width: 100%;
+    height: 8dvh;
+    display: grid;
+    justify-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-main {
+    width: 20%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr)
+}
+
+.nav-item {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-accent)  ;
+    font-family: var(--font-title);
+    cursor: pointer;    
+}
+
+.nav-item:hover {
+    color: beige  ;
+    background-color: var(--color-accent);
+    font-family: var(--font-title);    
+}
+
+main {
+    margin-top: 8dvh;
+    width: 100%;
+    height: 92dvh;
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+
+article {
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-body-2);
+    padding: 7.5% 10% 7.5% 10%;
+    display: grid;
+    grid-template-columns: 21% 21% 21% 21%;
+    column-gap: 5%;
+    row-gap: 7.5%;
+    justify-content: center;
+}
+
+.article-content {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 80% 20%;
+    place-items: center;
+    border: 3px solid #5C469C;
+    border-radius: 2px;
+    overflow: hidden;
+    background-image: url(../media/ahoy.jpg);
+    background-size: cover;
+}
+
+.article-content:hover {
+    transform: scale(1.2);
+    transition: transform 250ms;
+    cursor: pointer;
+}
+
+.article-bottom-content {
+    background-color: rgba(37, 29, 58, 0.7);
+    width: 100%;
+    height: 100%;
+    font-family: var(--font-body);
+    color: var(--color-font-light);
+    text-align: center;
+    place-content: center;
+}
+
+.article-bottom-content:hover {
+    background-color: #5C469C;
+    color: var(--color-font-light);
+}
+
+aside {
+    background-color: var(--color-body);
+    height: 100%;
+    width: 100%;
+    padding: 7.5% 10% 7.5% 10%;
+    display: grid;
+    grid-template-rows: 68.2% 28.5%;
+    row-gap: 5%;
+}
+
+.aside-content-favorite {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 30% 30% 30%;
+    row-gap: 5%;
+    align-items: center;
+}
+
+.aside-favorite {
+    background-color: var(--color-body-2);
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 32.5% 62.5%;
+    column-gap: 5%;
+}
+
+.aside-favorite:hover {
+    cursor: pointer;
+}   
+
+.aside-favorite-left {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.aside-favorite-left > img {
+    width: 100%;
+    height: 100%;
+}
+
+.aside-favorite-right {
+    color: var(--color-font-dark);
+    font-family: var(--font-body);
+    display: grid;
+    grid-template-rows: 62.5% 32.5%;
+    align-items: center;
+}
+
+.aside-content-iklan {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    row-gap: 5%;
+}
+
+.aside-content-iklan > img {
+    display: grid;
+    grid-area: 1/1;
+    width: 100%;
+    height: 100%;
+    opacity: 30%;
+}
+
+.aside-content-iklan > h3 {
+    height: 100%;
+    width: 100%;
+    grid-area: 1/1;
+    color: var(--color-font-dark);
+    font-family: var(--font-title);
+    display: grid;
+    place-items: center;
+}
+
+
+.page-container {
+    display: grid;
+    width: 100%;
+    height: 5.5dvh;
+    grid-template-columns: repeat(3, 0.035fr);
+    justify-content: center;
+    column-gap: 1%;
+    background-color: var(--color-body);
+    padding-right: 25%;
+}
+
+.button {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    border-radius: 3px;
+    font-family: var(--font-title);
+    color: #0C134F;
+}
+
+.button:hover {
+    background-color: #0C134F;
+    color: var(--color-font-light);
+    cursor: pointer;
+}
+
+footer {
+    width: 100%;
+    height: 20dvh;
+    display: grid;
+    padding-left: 7.5%;
+    font-family: var(--font-title);
+    color: var(--color-font-dark);
+    background-color: beige;
+    align-items: center;
+}
+
+
